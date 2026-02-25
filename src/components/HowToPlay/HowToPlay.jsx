@@ -28,7 +28,7 @@ const HowToPlay = ({ isOpen, onClose }) => (
     <div className={styles.content}>
       <p>Guess the <strong>LEXOM</strong> word in 6 tries.</p>
       <ul className={styles.rules}>
-        <li>The <strong>first letter</strong> is always revealed — SUTOM style!</li>
+        <li>The <strong>first letter</strong> is always revealed: SUTOM style!</li>
         <li>Each guess must be a valid 6-letter word.</li>
         <li>The color of tiles will change to show how close your guess was.</li>
       </ul>

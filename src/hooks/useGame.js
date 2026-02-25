@@ -139,7 +139,7 @@ export const useGame = (hardMode = false) => {
       return;
     }
 
-    // Hard mode: must use revealed hints
+    // Hard mode
     if (hardMode && evaluations.length > 0) {
       for (let i = 0; i < evaluations.length; i++) {
         const prevGuess = board[i].join("");
