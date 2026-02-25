@@ -1,0 +1,153 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.submitSection {
+  background-color: #0f2918;
+  border: 1px solid #538d4e;
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submitTitle {
+  font-size: 0.9rem;
+  color: #d7dadc;
+  font-weight: 600;
+}
+
+.inputRow {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  background-color: #1a1a1b;
+  border: 1px solid #3a3a3c;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  padding: 9px 12px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #538d4e;
+}
+
+.submitBtn {
+  background-color: #538d4e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 18px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 0.15s;
+  white-space: nowrap;
+}
+
+.submitBtn:hover { filter: brightness(1.1); }
+.submitBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.error {
+  color: #e4a823;
+  font-size: 0.82rem;
+}
+
+.successBanner {
+  background-color: #0f2918;
+  border: 1px solid #538d4e;
+  border-radius: 8px;
+  padding: 12px;
+  color: #538d4e;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.table th {
+  color: #818384;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 8px 6px;
+  text-align: left;
+  border-bottom: 1px solid #3a3a3c;
+}
+
+.table td {
+  padding: 10px 6px;
+  color: #d7dadc;
+  border-bottom: 1px solid #1e1e1f;
+}
+
+.rank { font-size: 1rem; }
+
+.player {
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.center { text-align: center; }
+
+.myRow td {
+  background-color: #0f2918;
+  color: #ffffff;
+}
+
+.hardTag {
+  background-color: #e4a823;
+  color: #121213;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.loading,
+.empty {
+  text-align: center;
+  color: #818384;
+  padding: 24px 0;
+  font-size: 0.9rem;
+}
+
+.refreshBtn {
+  background: none;
+  border: 1px solid #3a3a3c;
+  color: #818384;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  align-self: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.refreshBtn:hover {
+  border-color: #818384;
+  color: #d7dadc;
+}

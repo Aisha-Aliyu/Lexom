@@ -1,0 +1,58 @@
+.tile {
+  width: 58px;
+  height: 58px;
+  border: 2px solid #3a3a3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  transition: border-color 0.1s ease;
+  border-radius: 4px;
+  user-select: none;
+  position: relative;
+}
+
+.filled {
+  border-color: #565758;
+  animation: pop 0.1s ease;
+}
+
+.locked {
+  background-color: #1a6b3a !important;
+  border-color: #1a6b3a !important;
+}
+
+.reveal {
+  animation: flip 0.5s ease forwards;
+}
+
+.correct {
+  background-color: #538d4e;
+  border-color: #538d4e;
+}
+
+.present {
+  background-color: #e4a823;
+  border-color: #e4a823;
+}
+
+.absent {
+  background-color: #3a3a3c;
+  border-color: #3a3a3c;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+@keyframes flip {
+  0%   { transform: rotateX(0deg); }
+  50%  { transform: rotateX(-90deg); }
+  100% { transform: rotateX(0deg); }
+}

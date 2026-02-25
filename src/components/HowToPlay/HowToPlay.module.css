@@ -1,0 +1,81 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #d7dadc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.rules {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #3a3a3c;
+}
+
+.examplesTitle {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #818384;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row {
+  display: flex;
+  gap: 4px;
+}
+
+.tile {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 2px solid #3a3a3c;
+  color: #fff;
+}
+
+.correct  { background-color: #538d4e; border-color: #538d4e; }
+.present  { background-color: #e4a823; border-color: #e4a823; }
+.absent   { background-color: #3a3a3c; border-color: #3a3a3c; }
+
+.note {
+  font-size: 0.88rem;
+  color: #818384;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
